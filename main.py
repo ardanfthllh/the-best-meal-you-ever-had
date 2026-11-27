@@ -10,6 +10,7 @@ def generate_entry() -> str:
 
 if __name__ == "__main__":
     text = generate_entry()
+    # Gate: one sentence, at most 200 characters.
     print(text)
     if os.path.isdir("/output"):
         with open("/output/entry.txt", "w", encoding="utf-8") as f:
